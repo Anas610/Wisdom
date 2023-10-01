@@ -1,0 +1,238 @@
+:root {
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 6.9375rem;
+  color: #1f4d36;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5.1875rem;
+  color: #f2f4ea;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.5625rem;
+  line-height: 1.8125rem;
+}
+
+h4,
+a {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 88%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Source Serif Pro", serif;
+}
+
+.visit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f4d36;
+  padding: 0.6563rem 0;
+}
+.visit h4 {
+  color: #f2f4ea;
+}
+
+nav {
+  color: #1f4d36;
+  background-color: #f2f4ea;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5625rem 0 1.25rem;
+  border-bottom: 0.125rem solid #1f4d36;
+}
+nav .container .nav__links {
+  display: flex;
+}
+nav .container .nav__links li {
+  margin-right: 1.5625rem;
+}
+nav .container .nav__links li a {
+  text-decoration: none;
+}
+nav .container .nav__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.0625rem;
+  height: 3.25rem;
+  padding: 0.725rem 1.25rem 0.625rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #1f4d36;
+  background-color: #f2f4ea;
+  border: 0.0625rem solid #1f4d36;
+  border-radius: 6.25rem;
+}
+nav .container .nav__button a {
+  text-decoration: none;
+}
+
+header {
+  padding: 4.375rem 0 8.4375rem;
+  color: #1f4d36;
+  background-color: #f2f4ea;
+}
+header .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .container .header__content {
+  width: 40rem;
+}
+header .container .header__content p {
+  margin: 1.25rem 0;
+  width: 85%;
+}
+header .container .header__content .btns {
+  display: flex;
+}
+header .container .header__content .btns .btn-prim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.0625rem;
+  height: 3.25rem;
+  padding: 0.725rem 1.25rem 0.625rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #f2f4ea;
+  background-color: #1f4d36;
+  border: 0.0625rem solid #1f4d36;
+  border-radius: 6.25rem;
+  margin-right: 1.25rem;
+  text-decoration: none;
+}
+header .container .header__content .btns .btn-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.0625rem;
+  height: 3.25rem;
+  padding: 0.725rem 1.25rem 0.625rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #1f4d36;
+  background-color: #f2f4ea;
+  border: 0.0625rem solid #1f4d36;
+  border-radius: 6.25rem;
+  text-decoration: none;
+}
+header .container .header__content .btns .btn-sec img {
+  vertical-align: middle;
+  margin-right: 0.7712rem;
+}
+header .container .header__img img {
+  border-radius: 1.25rem 1.25rem;
+}
+
+.condition {
+  color: #f2f4ea;
+  background-color: #1f4d36;
+}
+.condition__container {
+  padding: 4.375rem 3.125rem;
+  width: 75%;
+  margin: 0 auto;
+}
+.condition .condition__header {
+  text-align: center;
+}
+.condition .condition__header h4 {
+  margin-bottom: 5rem;
+}
+.condition .condition__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.condition .condition__cards .card {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.condition .condition__cards .card h3 {
+  margin: 1.5625rem 0 0.6875rem;
+}
+.condition .condition__cards .card img {
+  vertical-align: middle;
+}
+
+@media (max-width: 992px) {
+  :root {
+    font-size: 0.875rem;
+  }
+  .nav__links a {
+    display: none;
+  }
+  .header__content {
+    margin: 0 auto;
+    width: 100% !important;
+  }
+  .header__img {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .header__img img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .card {
+    width: 40% !important;
+  }
+}
+@media (max-width: 576px) {
+  :root {
+    font-size: 0.625rem;
+  }
+  .nav__links a {
+    display: none;
+  }
+  .card {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */
